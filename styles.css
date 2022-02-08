@@ -176,7 +176,7 @@ footer a {
 
 @font-face {
     font-family: OdinFont;
-    src: url(/fonts/Norse-Bold.otf);
+    src: url(./fonts/Norse-Bold.otf);
 }
 
 a {
