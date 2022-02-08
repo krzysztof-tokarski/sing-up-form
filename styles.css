@@ -1,0 +1,240 @@
+/* BODY */
+
+body {
+    margin: 0;
+}
+
+#whole-content {
+    display: flex;
+    box-sizing: content-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/* SIDE-BAR */
+
+#side-bar {
+    flex: 3.75;
+    user-select: none;
+    position: relative;
+    font-family: OdinFont;
+    color: white;
+    background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    max-width: 800px;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#odin-logo-container {
+    display: flex;
+    position: relative;
+    top: 15%;
+    background-color: rgba(39, 39, 39, 0.459);
+    justify-content: center;
+    align-items: center;
+    height: max(150px,15vh);
+    font-size: max(100px,15vh);
+    padding: 15px 15px;
+}
+
+
+img {
+    height: max(100px,15vh);
+}
+
+#credit {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* CONTENT-CONTAINER */
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    flex: 6.25;
+}
+
+
+header,
+main,
+footer{
+    color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    flex: 3.0;
+    flex-grow: 1;
+    background-color: rgb(234, 243, 243);
+    padding-top: max(4vh,30px);
+    padding-bottom: max(4vh,30px);
+    padding-left:25px;
+    padding-right: max(11vw,30px);;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header div,
+main div,
+footer div {
+    max-width: 1000px;
+}
+
+header {
+    font-size: clamp(24px, calc(12px + 6 * ((100vw - 320px) / 680)),29px);
+    /* max(25px, calc(12px + 6 * ((100vw - 320px) / 680))); */
+    font-weight: bold;
+    justify-content: flex-end;
+    gap: 30px;
+    flex-direction: column;
+    padding-top: max(8vh,30px);
+}
+
+#main-header {
+    font-size: clamp(24px, calc(12px + 6 * ((100vw - 320px) / 680)),29px);
+    font-weight: bold;
+}
+
+main {
+    gap:30px;
+    flex-direction: column;
+    flex: 1.5; 
+    background-color: white;
+    padding-top: max(2vh,30px);
+    padding-bottom: max(2vh,30px);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+
+label {
+    display:block;
+    padding-bottom: 5px;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    background-color: rgba(211, 211, 211, 0.164);
+}
+
+input:focus {
+    outline: none;
+    /* background-color: rgba(255, 255, 0, 0.068); */
+    border: 1px solid #094dd6;
+}
+
+input:hover{
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    box-shadow: 10px 10px 8px 12px #88888877;
+    font-weight: bold;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 20px;
+}
+
+footer a {
+    color: #596D48;
+    text-decoration: none;
+    
+}
+
+/* SPECIFIC ELEMENTS */
+
+@font-face {
+    font-family: OdinFont;
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+a {
+    color:white;
+}
+
+button {
+    flex: 0;
+    background-color: #596D48;
+    max-width: 250px;
+    border-radius: 10px;
+    min-height: 50px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border-style: ;
+    border: 3px inset silver;
+}
+
+
+
+button:hover {
+    background-color: #3f4e32;
+}
+
+button:active {
+    transform: scale(0.9)
+}
+
+
+
+
+
+
+
+
+/* #side-bar::after {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+    flex: auto;
+    color: white;
+    content: "Photo by Halie West on Unsplash";
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+} */
+
+
+
+    /* background-color: black;
+    background
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    height: 100px;
+    width: 100%;
+} */
