@@ -30,7 +30,7 @@ body {
 #odin-logo-container {
     display: flex;
     position: relative;
-    top: 15%;
+    top: 12vh;
     background-color: rgba(39, 39, 39, 0.459);
     justify-content: center;
     align-items: center;
@@ -70,11 +70,9 @@ main,
 footer{
     color: rgba(0, 0, 0, 0.781);
     display: flex;
-    flex: 3.0;
-    flex-grow: 1;
     background-color: rgb(234, 243, 243);
-    padding-top: max(4vh,30px);
-    padding-bottom: max(4vh,30px);
+    padding-top: 4vh;
+    padding-bottom: 4vh;
     padding-left:25px;
     padding-right: max(11vw,30px);;
     box-sizing: border-box;
@@ -96,6 +94,7 @@ header {
     gap: 30px;
     flex-direction: column;
     padding-top: max(8vh,30px);
+    flex: 0.3;
 }
 
 #main-header {
@@ -106,22 +105,21 @@ header {
 main {
     gap:30px;
     flex-direction: column;
-    flex: 1.5; 
+    flex: 0.3;
     background-color: white;
-    padding-top: max(2vh,30px);
-    padding-bottom: max(2vh,30px);
+    padding-top: max(3vh,30px);
 }
 
 form {
     display: flex;
-    flex-direction: row;
-    gap: 100px;
+    flex-direction: column;
 }
 
-.form-column {
+.form-row {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.671);
@@ -164,23 +162,13 @@ footer {
     flex-direction: column;
     gap: 30px;
     font-size: 20px;
+    flex: 0.5;
 }
 
 footer a {
     color: #596D48;
     text-decoration: none;
     
-}
-
-/* SPECIFIC ELEMENTS */
-
-@font-face {
-    font-family: OdinFont;
-    src: url(./fonts/Norse-Bold.otf);
-}
-
-a {
-    color:white;
 }
 
 button {
@@ -196,8 +184,6 @@ button {
     border: 3px inset silver;
 }
 
-
-
 button:hover {
     background-color: #3f4e32;
 }
@@ -207,34 +193,29 @@ button:active {
 }
 
 
+/* SPECIFIC ELEMENTS */
 
+@font-face {
+    font-family: OdinFont;
+    src: url(./fonts/Norse-Bold.otf);
+}
 
+a {
+    color:white;
+}
 
+.doNotMatch {
+    border: 1px solid #eb1414;
+    background-color: rgba(228, 173, 173, 0.356);
+}
 
+#password {
+    position: relative;
+}
 
-
-/* #side-bar::after {
-    font-family: 'Courier New', Courier, monospace;
-    padding: 15px 0px;
-    width: 100%;
+#errorDiv {
     position: absolute;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.575);
-    flex: auto;
-    color: white;
-    content: "Photo by Halie West on Unsplash";
-    text-align: center;
-    overflow: hidden;
-    box-sizing: border-box;
-    
-} */
-
-
-
-    /* background-color: black;
-    background
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    height: 100px;
-    width: 100%;
-} */
+    margin-top: 5px;
+    font-weight: lighter;
+    color: red;
+}
